@@ -1,18 +1,15 @@
 import {
-  Theme,
+  ThemeProps,
   typographyCaptionStyles,
   typographyH3Styles,
   typographyParagraphStyles
 } from './index';
 
-export interface TextInputStyles {
+export interface TextInputStyles extends ThemeProps {
   help?: boolean;
 }
 
-export const textInputStyles = ({
-  help,
-  theme
-}: TextInputStyles & { theme: Theme }) => `
+export const textInputStyles = ({ help, theme }: TextInputStyles) => `
 & .text-input-title {
   ${typographyH3Styles({ theme })}
 }
