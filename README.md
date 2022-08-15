@@ -303,6 +303,25 @@ export const NormalCard = Template.bind({});
 
 NormalCard.args = {
   title: 'Normal Title',
-  children: <Message severity="error" message="This is an error message." />
+  children: <Message severity="error">This is an error message.</Message>
 };
+```
+
+
+## Problems
+
+**When testing in a dummy React / Preact app**
+
+Please do not use `npm link` when debugging the library locally since node will bundle two react libraries and cause the app to crash.
+This is due to the `@ory/themes` library using `useEffect()`. You will receive the following error https://reactjs.org/link/invalid-hook-call even though the implementation is correct.
+
+To circumvent this use a `file:../themes` link instead.
+
+e.g.
+
+```json
+
+"dependencies": {
+  "@ory/themes": "file:../themes",
+}
 ```
