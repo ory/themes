@@ -1,6 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
-import { cardStyles, CardStyles } from '../theme';
+import React from "react"
+import styled from "styled-components"
+import { cardStyles, CardStyles } from "../theme"
 
 export interface CardProps
   extends React.HTMLAttributes<HTMLDivElement>,
@@ -8,6 +8,6 @@ export interface CardProps
 
 const Card = ({ className, wide, ...props }: CardProps) => (
   <div className={className} {...props} />
-);
+)
 
-export default styled(Card)(cardStyles);
+export default styled(Card)(cardStyles)
