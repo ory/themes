@@ -1,12 +1,12 @@
-import React, { ComponentType, InputHTMLAttributes, ReactNode } from 'react';
-import styled, { StyledComponent } from 'styled-components';
+import React, { ComponentType, InputHTMLAttributes, ReactNode } from "react";
+import styled, { StyledComponent } from "styled-components";
 import {
   textInputStyles,
   typographyCaptionStyles,
   typographyH3Styles,
   ThemeProps,
-  TextInputProps as StyledTextInputProps
-} from '../theme';
+  TextInputProps as StyledTextInputProps,
+} from "../theme";
 
 export interface TextInputProps
   extends React.InputHTMLAttributes<HTMLInputElement>,
@@ -37,12 +37,12 @@ const TextInput = ({
   title,
   subtitle,
   disabled,
-  type = 'text',
+  type = "text",
   ...props
 }: TextInputProps) => {
   let state = props.state;
   if (disabled) {
-    state = 'disabled';
+    state = "disabled";
   }
 
   return (

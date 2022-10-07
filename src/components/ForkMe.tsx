@@ -1,12 +1,12 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 import {
   forkMeStyles,
   forkMeStylesFork,
   forkMeStylesImages,
   forkMeStylesLink,
-  forkMeStylesText
-} from '../theme';
+  forkMeStylesText,
+} from "../theme";
 
 export interface ForkMeProps extends React.HTMLAttributes<HTMLDivElement> {}
 
@@ -19,8 +19,8 @@ const ForkMe = ({ className }: ForkMeProps) => (
   <div className={className}>
     {/*<Image src={require('../stories/assets/ory.png')} />*/}
     <Text>
-      Fork this example project on{' '}
-      <Link href={'https://github.com/ory'}>
+      Fork this example project on{" "}
+      <Link href={"https://github.com/ory"}>
         {/*<Fork src={require('../stories/assets/repo-forked.png')} />*/}
         GitHub!
       </Link>

@@ -1,8 +1,10 @@
-import { ThemeProps, wrapCss } from './index';
+// Copyright © 2022 Ory Corp
+
+import { ThemeProps, wrapCss } from "./index";
 
 const geometricPrecision = ({ theme }: ThemeProps) =>
-  theme.platform === 'react-native'
-    ? ''
+  theme.platform === "react-native"
+    ? ""
     : `text-rendering: geometricPrecision;
 `;
 
@@ -16,7 +18,7 @@ line-height: 40px;
 `;
 
 export const cssTypographyH1Styles = (props: ThemeProps) =>
-  wrapCss('typography-h1', typographyH1Styles(props));
+  wrapCss("typography-h1", typographyH1Styles(props));
 
 export const typographyH2Styles = (props: ThemeProps) => `
 ${geometricPrecision(props)}
@@ -28,7 +30,7 @@ line-height: 24px;
 `;
 
 export const cssTypographyH2Styles = (props: ThemeProps) =>
-  wrapCss('typography-h2', typographyH2Styles(props));
+  wrapCss("typography-h2", typographyH2Styles(props));
 
 export const typographyH3Styles = (props: ThemeProps) => `
 ${geometricPrecision(props)}
@@ -40,7 +42,7 @@ line-height: 20px;
 `;
 
 export const cssTypographyH3Styles = (props: ThemeProps) =>
-  wrapCss('typography-h3', typographyH3Styles(props));
+  wrapCss("typography-h3", typographyH3Styles(props));
 
 export const typographyLeadStyles = (props: ThemeProps) => `
 ${geometricPrecision(props)}
@@ -52,7 +54,7 @@ line-height: 24px;
 `;
 
 export const cssTypographyLeadStyles = (props: ThemeProps) =>
-  wrapCss('typography-lead', typographyLeadStyles(props));
+  wrapCss("typography-lead", typographyLeadStyles(props));
 
 export const typographyParagraphStyles = (props: ThemeProps) => `
 ${geometricPrecision(props)}
@@ -64,7 +66,7 @@ line-height: 20px;
 `;
 
 export const cssTypographyParagraphStyles = (props: ThemeProps) =>
-  wrapCss('typography-paragraph', typographyParagraphStyles(props));
+  wrapCss("typography-paragraph", typographyParagraphStyles(props));
 
 export const typographyButtonStyles = (props: ThemeProps) => `
 ${geometricPrecision(props)}
@@ -76,7 +78,7 @@ line-height: 20px;
 `;
 
 export const cssTypographyButtonStyles = (props: ThemeProps) =>
-  wrapCss('typography-button', typographyButtonStyles(props));
+  wrapCss("typography-button", typographyButtonStyles(props));
 
 export const typographyCodeStyles = ({ theme }: ThemeProps) => `
 ${geometricPrecision({ theme })}
@@ -90,7 +92,7 @@ color: ${theme.grey0}
 `;
 
 export const cssTypographyCodeStyles = (props: ThemeProps) =>
-  wrapCss('typography-code', typographyCodeStyles(props));
+  wrapCss("typography-code", typographyCodeStyles(props));
 
 export const typographyCaptionStyles = (props: ThemeProps) => `
 ${geometricPrecision(props)}
@@ -103,7 +105,7 @@ margin-bottom: 14px;
 `;
 
 export const cssTypographyCaptionStyles = (props: ThemeProps) =>
-  wrapCss('typography-caption', typographyCaptionStyles(props));
+  wrapCss("typography-caption", typographyCaptionStyles(props));
 
 export const typographyLinkStyles = ({ theme }: ThemeProps) => {
   let css = `${geometricPrecision({ theme })}
@@ -117,7 +119,7 @@ text-decoration: none;
 color: ${theme.primary60};
 `;
 
-  if (theme.platform !== 'react-native') {
+  if (theme.platform !== "react-native") {
     css += `
 &.fake-visited, 
 &:visited {
@@ -139,4 +141,4 @@ color: ${theme.primary60};
 };
 
 export const cssTypographyLinkStyles = (props: ThemeProps) =>
-  wrapCss('typography-link', typographyLinkStyles(props));
+  wrapCss("typography-link", typographyLinkStyles(props));

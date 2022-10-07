@@ -1,4 +1,6 @@
-import { css } from 'styled-components';
+// Copyright © 2022 Ory Corp
+
+import { css } from "styled-components";
 
 export const cssNormalize = `
   /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */

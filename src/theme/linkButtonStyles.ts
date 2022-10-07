@@ -1,4 +1,6 @@
-import { ThemeProps, typographyButtonStyles, wrapCss } from './index';
+// Copyright © 2022 Ory Corp
+
+import { ThemeProps, typographyButtonStyles, wrapCss } from "./index";
 
 export interface LinkButtonStyles extends ThemeProps {
   big?: boolean;
@@ -11,7 +13,7 @@ box-sizing: border-box;
 & .linkButton {
   box-sizing: border-box;
   
-  line-height: ${!big ? '20px' : '30px'};
+  line-height: ${!big ? "20px" : "30px"};
   color: ${theme.grey0};
   border-radius: ${theme.borderRadius};
   
@@ -69,7 +71,7 @@ box-sizing: border-box;
 `;
 
 export const cssLinkButtonStyles = (props: ThemeProps) =>
-  wrapCss('input-linkButton', linkButtonStyles(props));
+  wrapCss("input-linkButton", linkButtonStyles(props));
 
 export const cssLinkButtonStylesBig = (props: ThemeProps) =>
-  wrapCss('input-linkButton-big', linkButtonStyles({ ...props, big: true }));
+  wrapCss("input-linkButton-big", linkButtonStyles({ ...props, big: true }));

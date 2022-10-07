@@ -1,6 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
-import { alertStyles, AlertStyles } from '../theme';
+import React from "react";
+import styled from "styled-components";
+import { alertStyles, AlertStyles } from "../theme";
 
 export interface AlertProps
   extends React.HTMLAttributes<HTMLDivElement>,

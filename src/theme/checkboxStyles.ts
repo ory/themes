@@ -1,9 +1,11 @@
+// Copyright © 2022 Ory Corp
+
 import {
   ThemeProps,
   typographyH3Styles,
   typographyParagraphStyles,
-  wrapCss
-} from './index';
+  wrapCss,
+} from "./index";
 
 export const checkboxStyles = ({ theme }: ThemeProps) => `
 margin-bottom: 14px;
@@ -68,4 +70,4 @@ margin-bottom: 14px;
 `;
 
 export const cssCheckboxStyles = (props: ThemeProps) =>
-  wrapCss('checkbox', checkboxStyles(props));
+  wrapCss("checkbox", checkboxStyles(props));

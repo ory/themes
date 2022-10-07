@@ -1,7 +1,7 @@
-import React, { ReactNode } from 'react';
-import styled from 'styled-components';
-import { codeBoxStyles } from '../theme';
-import { Code } from './Typography';
+import React, { ReactNode } from "react";
+import styled from "styled-components";
+import { codeBoxStyles } from "../theme";
+import { Code } from "./Typography";
 
 export interface CodeBoxProps extends React.HTMLAttributes<HTMLPreElement> {
   code: string;
