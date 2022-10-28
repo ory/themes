@@ -10,7 +10,6 @@
   "scripts": {
     "start": "start-storybook -p 6007",
     "build-storybook": "build-storybook",
-    "format": "prettier --write \"src/{**/,}*.{js,ts,tsx}\"",
     "build": "rm -rf lib && rollup -c",
     "p": "npm run build && npm version patch --git-tag-version false && npm publish"
   },
