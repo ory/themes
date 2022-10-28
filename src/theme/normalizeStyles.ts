@@ -1,4 +1,4 @@
-import { css } from 'styled-components';
+import { css } from "styled-components"
 
 export const cssNormalize = `
   /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -352,6 +352,6 @@ export const cssNormalize = `
   [hidden] {
     display: none;
   }
-`;
+`
 
-export default css(() => cssNormalize);
+export default css(() => cssNormalize)
