@@ -3,33 +3,33 @@ import {
   ThemeProps,
   typographyCaptionStyles,
   typographyH3Styles,
-  wrapCss
-} from './index'
+  wrapCss,
+} from "./index"
 
 export interface TextInputProps {
   help?: boolean
-  state?: 'success' | 'error' | 'disabled'
+  state?: "success" | "error" | "disabled"
 }
 
 type ColorFunc = (props: ThemeProps & TextInputProps) => string
 
 const textColorForState: ColorFunc = ({ state, theme }) => {
   switch (state) {
-    case 'success':
+    case "success":
       return `color: ${theme.green60};`
-    case 'error':
+    case "error":
       return `color: ${theme.red60};`
   }
-  return ''
+  return ""
 }
 
 const borderColorForState: ColorFunc = ({ state, theme }) => {
   switch (state) {
-    case 'disabled':
-      return 'transparent'
-    case 'success':
+    case "disabled":
+      return "transparent"
+    case "success":
       return theme.green60
-    case 'error':
+    case "error":
       return theme.red60
   }
   return theme.grey30
@@ -37,10 +37,10 @@ const borderColorForState: ColorFunc = ({ state, theme }) => {
 
 const backgroundColorForState: ColorFunc = ({ state, theme }) => {
   switch (state) {
-    case 'disabled':
+    case "disabled":
       return theme.grey10
   }
-  return 'transparent'
+  return "transparent"
 }
 
 export const textInputTitleStyles: ColorFunc = (props) => `
@@ -49,7 +49,7 @@ export const textInputTitleStyles: ColorFunc = (props) => `
 `
 
 export const cssTextInputTitleStyles = (props: ThemeProps) =>
-  wrapCss('text-input-title', textInputTitleStyles(props))
+  wrapCss("text-input-title", textInputTitleStyles(props))
 
 export const textInputSubtitleStyles: ColorFunc = (props) => `
   ${typographyCaptionStyles(props)}
@@ -57,7 +57,7 @@ export const textInputSubtitleStyles: ColorFunc = (props) => `
   margin-bottom: 15px;
 `
 export const cssTextInputSubtitleStyles = (props: ThemeProps) =>
-  wrapCss('text-input-subtitle', textInputSubtitleStyles(props))
+  wrapCss("text-input-subtitle", textInputSubtitleStyles(props))
 
 export const textInputStyles: ColorFunc = (props) => {
   const { theme, help, state } = props
@@ -71,13 +71,13 @@ export const textInputStyles: ColorFunc = (props) => {
   font-style: normal;
   font-size: 14px;
   
-  color: ${state === 'disabled' ? theme.grey30 : theme.grey70}; 
+  color: ${state === "disabled" ? theme.grey30 : theme.grey70}; 
 
   width: 100%;
   padding: 5px 12px;
   
   margin-top: 7px;
-  margin-bottom: ${!help ? '14px' : '7px'};
+  margin-bottom: ${!help ? "14px" : "7px"};
   
   border: 1px solid ${borderColorForState(props)};
   border-radius: ${theme.borderRadius};
@@ -86,7 +86,7 @@ export const textInputStyles: ColorFunc = (props) => {
   overflow: visible;
 `
 
-  if (theme.platform !== 'react-native') {
+  if (theme.platform !== "react-native") {
     css += `
   outline: none;
 
@@ -106,4 +106,4 @@ export const textInputStyles: ColorFunc = (props) => {
 }
 
 export const cssTextInputStyles = (props: ThemeProps) =>
-  wrapCss('text-input', textInputStyles(props))
+  wrapCss("text-input", textInputStyles(props))

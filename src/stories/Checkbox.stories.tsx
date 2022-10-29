@@ -1,12 +1,12 @@
-import React from 'react'
-import { Meta } from '@storybook/react'
-import { Story } from '@storybook/react/types-6-0'
-import { Container, Spacer } from './storyhelper'
-import Checkbox, { CheckboxProps } from '../components/Checkbox'
+import React from "react"
+import { Meta } from "@storybook/react"
+import { Story } from "@storybook/react/types-6-0"
+import { Container, Spacer } from "./storyhelper"
+import Checkbox, { CheckboxProps } from "../components/Checkbox"
 
 const meta: Meta = {
-  title: 'Checkbox',
-  component: Checkbox
+  title: "Checkbox",
+  component: Checkbox,
 }
 
 const Template: Story<CheckboxProps> = (args: CheckboxProps) => (
@@ -17,7 +17,7 @@ const Template: Story<CheckboxProps> = (args: CheckboxProps) => (
 
 export const Playground = Template.bind({})
 Playground.args = {
-  label: 'Send me occasional updates and announcements with newsletters'
+  label: "Send me occasional updates and announcements with newsletters",
 }
 
 export const CheckboxWithTitleDescription = () => (

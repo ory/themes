@@ -1,5 +1,5 @@
-const postcss = require('postcss')
-const postcssPresetEnv = require('postcss-preset-env')
+const postcss = require("postcss")
+const postcssPresetEnv = require("postcss-preset-env")
 
 const {
   cssButtonStyles,
@@ -24,24 +24,24 @@ const {
   cssTypographyLeadStyles,
   cssTypographyLinkStyles,
   cssTypographyParagraphStyles,
-  theme: t
-} = require('../lib')
-const { cssNormalize } = require('../lib')
+  theme: t,
+} = require("../lib")
+const { cssNormalize } = require("../lib")
 
 function cssVars(tt) {
   const result = []
   for (let [k, v] of Object.entries(tt)) {
     result.push(`  --${k}: ${v};`)
   }
-  return result.join('\n')
+  return result.join("\n")
 }
 
 const themeContext = (theme) => {
   if (theme) {
-    return { theme: { ...theme, platform: 'react' } }
+    return { theme: { ...theme, platform: "react" } }
   }
 
-  return { theme: { ...t, platform: 'react' } }
+  return { theme: { ...t, platform: "react" } }
 }
 
 module.exports = {
@@ -87,20 +87,20 @@ ${cssTypographyCaptionStyles(ct)}
 ${cssTypographyLinkStyles(ct)}
   `
 
-      res.header('Content-Type', 'text/css')
+      res.header("Content-Type", "text/css")
 
       postcss([
         postcssPresetEnv({
           stage: 0,
           features: {
-            'nesting-rules': true
-          }
-        })
+            "nesting-rules": true,
+          },
+        }),
       ])
-        .process(css, { from: 'src/theme.css', to: 'lib/theme.css' })
+        .process(css, { from: "src/theme.css", to: "lib/theme.css" })
         .then((result) => {
           res.send(result.css)
         })
     }
-  }
+  },
 }

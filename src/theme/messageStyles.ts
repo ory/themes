@@ -1,4 +1,4 @@
-import { codeBoxStyles, ThemeProps, typographyH3Styles, wrapCss } from './index'
+import { codeBoxStyles, ThemeProps, typographyH3Styles, wrapCss } from "./index"
 
 export const messageStyles = (props: ThemeProps) => `
   ${typographyH3Styles(props)}
@@ -11,4 +11,4 @@ export const messageStyles = (props: ThemeProps) => `
 `
 
 export const cssMessageStyles = (props: ThemeProps) =>
-  wrapCss('message', messageStyles(props))
+  wrapCss("message", messageStyles(props))

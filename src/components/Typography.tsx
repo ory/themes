@@ -1,5 +1,5 @@
-import React, { HTMLAttributes, ReactNode } from 'react'
-import styled, { ThemeProvider } from 'styled-components'
+import React, { HTMLAttributes, ReactNode } from "react"
+import styled, { ThemeProvider } from "styled-components"
 import {
   theme,
   typographyH1Styles,
@@ -10,8 +10,8 @@ import {
   typographyButtonStyles,
   typographyCodeStyles,
   typographyCaptionStyles,
-  typographyLinkStyles
-} from '../theme'
+  typographyLinkStyles,
+} from "../theme"
 
 const StyledH1 = styled.h1(typographyH1Styles)
 const StyledH2 = styled.h2(typographyH2Styles)

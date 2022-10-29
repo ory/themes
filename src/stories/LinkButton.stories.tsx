@@ -1,14 +1,14 @@
-import React from 'react'
-import { Meta } from '@storybook/react'
-import { Story } from '@storybook/react/types-6-0'
+import React from "react"
+import { Meta } from "@storybook/react"
+import { Story } from "@storybook/react/types-6-0"
 
-import LinkButton, { LinkButtonProps } from '../components/LinkButton'
-import { Container, Spacer } from './storyhelper'
-import { Caption, Link as StyledLink } from '../components/Typography'
+import LinkButton, { LinkButtonProps } from "../components/LinkButton"
+import { Container, Spacer } from "./storyhelper"
+import { Caption, Link as StyledLink } from "../components/Typography"
 
 const meta: Meta = {
-  title: 'LinkButton',
-  component: LinkButton
+  title: "LinkButton",
+  component: LinkButton,
 }
 
 const Template: Story<LinkButtonProps> = (args: LinkButtonProps) => (
@@ -19,7 +19,7 @@ const Template: Story<LinkButtonProps> = (args: LinkButtonProps) => (
 
 export const Playground = Template.bind({})
 Playground.args = {
-  children: 'Default Text'
+  children: "Default Text",
 }
 
 export const Size = () => (
@@ -96,7 +96,7 @@ export const Disabled = () => (
 export const Helper = () => {
   const message = (
     <Caption>
-      By creating an account, you agree to the{' '}
+      By creating an account, you agree to the{" "}
       <StyledLink
         href="https://www.ory.sh/"
         target="_blank"
@@ -104,7 +104,7 @@ export const Helper = () => {
       >
         Terms of Service
       </StyledLink>
-      . For more information about privacy practices, see the{' '}
+      . For more information about privacy practices, see the{" "}
       <StyledLink
         href="https://www.ory.sh/"
         target="_blank"

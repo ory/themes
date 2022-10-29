@@ -1,6 +1,6 @@
-import { createGlobalStyle } from 'styled-components'
-import normalize from './normalizeStyles'
-import { ThemeProps } from './helpers'
+import { createGlobalStyle } from "styled-components"
+import normalize from "./normalizeStyles"
+import { ThemeProps } from "./helpers"
 
 export const globalStyles = ({ theme }: ThemeProps) => `
 ${normalize}

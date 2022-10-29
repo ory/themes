@@ -1,6 +1,6 @@
-import React, { ReactNode } from 'react'
-import styled from 'styled-components'
-import { buttonStyles, ButtonStyles } from '../theme'
+import React, { ReactNode } from "react"
+import styled from "styled-components"
+import { buttonStyles, ButtonStyles } from "../theme"
 
 export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement>,

@@ -1,6 +1,6 @@
-import React from 'react'
-import styled from 'styled-components'
-import { cardStyles, CardStyles } from '../theme'
+import React from "react"
+import styled from "styled-components"
+import { cardStyles, CardStyles } from "../theme"
 
 export interface CardProps
   extends React.HTMLAttributes<HTMLDivElement>,

@@ -1,8 +1,8 @@
-import React from 'react'
-import { Meta } from '@storybook/react'
-import { Story } from '@storybook/react/types-6-0'
+import React from "react"
+import { Meta } from "@storybook/react"
+import { Story } from "@storybook/react/types-6-0"
 
-import { Container, HR } from './storyhelper'
+import { Container, HR } from "./storyhelper"
 import {
   H1,
   H2,
@@ -12,11 +12,11 @@ import {
   Link as StyledLink,
   P,
   B,
-  Lead
-} from '../components/Typography'
+  Lead,
+} from "../components/Typography"
 
 const meta: Meta = {
-  title: 'Typography'
+  title: "Typography",
 }
 
 const Template: Story<{}> = () => (
@@ -50,7 +50,7 @@ const Template: Story<{}> = () => (
 
 export const Typography = Template.bind({})
 Typography.args = {
-  children: 'Text'
+  children: "Text",
 }
 
 export const Links: Story = () => (

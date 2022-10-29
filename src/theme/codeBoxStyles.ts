@@ -1,4 +1,4 @@
-import { ThemeProps, wrapCss } from './index'
+import { ThemeProps, wrapCss } from "./index"
 
 export const codeBoxStyles = ({ theme }: ThemeProps) => `
 background-color: ${theme.grey70};
@@ -9,4 +9,4 @@ overflow-wrap: break-word;
 `
 
 export const cssCodeBoxStyles = (props: ThemeProps) =>
-  wrapCss('code-box', codeBoxStyles(props))
+  wrapCss("code-box", codeBoxStyles(props))

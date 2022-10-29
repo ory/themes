@@ -1,7 +1,7 @@
-import React, { ReactNode } from 'react'
-import styled from 'styled-components'
-import { linkButtonStyles, LinkButtonStyles } from '../theme'
-import cn from 'classnames'
+import React, { ReactNode } from "react"
+import styled from "styled-components"
+import { linkButtonStyles, LinkButtonStyles } from "../theme"
+import cn from "classnames"
 
 export interface LinkButtonProps
   extends React.AnchorHTMLAttributes<HTMLAnchorElement>,
@@ -20,7 +20,7 @@ const LinkButton = ({ helper, className, ...props }: LinkButtonProps) => (
         }
       }}
       aria-disabled={props.disabled}
-      className={cn('linkButton', { disabled: props.disabled })}
+      className={cn("linkButton", { disabled: props.disabled })}
       {...props}
     />
     {helper && <span className="linkButton-helper">{helper}</span>}

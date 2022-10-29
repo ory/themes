@@ -1,17 +1,17 @@
-import React, { ComponentType } from 'react'
-import styled, { StyledComponent } from 'styled-components'
+import React, { ComponentType } from "react"
+import styled, { StyledComponent } from "styled-components"
 import {
   checkboxStyles,
   TextInputProps as StyledTextInputProps,
-  typographyCaptionStyles
-} from '../theme'
+  typographyCaptionStyles,
+} from "../theme"
 
 export interface CheckboxProps
   extends React.InputHTMLAttributes<HTMLInputElement> {
   title?: string
   subtitle?: string
   label?: string
-  state?: 'success' | 'error' | 'disabled'
+  state?: "success" | "error" | "disabled"
 }
 
 const Subtitle: StyledComponent<
@@ -30,7 +30,7 @@ const Checkbox = ({
   const id = Math.random().toString(36).substring(2)
   return (
     <div className={className}>
-      {title && <div className={'checkbox-title'}>{title}</div>}
+      {title && <div className={"checkbox-title"}>{title}</div>}
       <div className="checkbox-inner">
         <input id={id} type="checkbox" {...props} />
         {label && (

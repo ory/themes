@@ -1,4 +1,4 @@
-import { ThemeProps } from './index'
+import { ThemeProps } from "./index"
 
 export interface CardStyles extends ThemeProps {
   wide?: boolean
@@ -11,7 +11,7 @@ border: 1px solid ${theme.grey10};
 display: flex;
 flex-direction: column;
 align-items: stretch;
-width:  ${wide ? '680' : '336'}px;
+width:  ${wide ? "680" : "336"}px;
 margin: 0 auto;
 padding: 20px;
 `
