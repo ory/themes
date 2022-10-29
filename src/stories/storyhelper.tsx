@@ -1,7 +1,7 @@
-import React, { ReactNode } from 'react';
-import { GlobalStyle } from '../theme/globalStyles';
-import { ThemeProvider } from 'styled-components';
-import { theme } from '../theme';
+import React, { ReactNode } from 'react'
+import { GlobalStyle } from '../theme/globalStyles'
+import { ThemeProvider } from 'styled-components'
+import { theme } from '../theme'
 
 export const Spacer = ({ children }: { children: ReactNode }) => (
   <div
@@ -11,14 +11,14 @@ export const Spacer = ({ children }: { children: ReactNode }) => (
   >
     {children}
   </div>
-);
+)
 
 export const Container = ({
   children,
   width = 260
 }: {
-  children: ReactNode;
-  width?: number;
+  children: ReactNode
+  width?: number
 }) => (
   <div style={{ width, margin: '0 auto' }}>
     <ThemeProvider theme={theme}>
@@ -26,7 +26,7 @@ export const Container = ({
       {children}
     </ThemeProvider>
   </div>
-);
+)
 
 export const HR = () => (
   <hr
@@ -38,4 +38,4 @@ export const HR = () => (
       margin: '16px 0'
     }}
   />
-);
+)

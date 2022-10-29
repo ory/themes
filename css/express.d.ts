@@ -1,1 +1,1 @@
-declare module '@ory/themes/css/express';
+declare module '@ory/themes/css/express'

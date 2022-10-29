@@ -18,6 +18,7 @@
     "url": "ssh://git@github.com:ory/themes.git"
   },
   "license": "Apache License 2.0",
+  "prettier": "ory-prettier-styles",
   "bugs": {
     "url": "https://github.com/ory/themes/issues"
   },

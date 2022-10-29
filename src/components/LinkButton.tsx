@@ -1,13 +1,13 @@
-import React, { ReactNode } from 'react';
-import styled from 'styled-components';
-import { linkButtonStyles, LinkButtonStyles } from '../theme';
-import cn from 'classnames';
+import React, { ReactNode } from 'react'
+import styled from 'styled-components'
+import { linkButtonStyles, LinkButtonStyles } from '../theme'
+import cn from 'classnames'
 
 export interface LinkButtonProps
   extends React.AnchorHTMLAttributes<HTMLAnchorElement>,
     LinkButtonStyles {
-  helper?: ReactNode;
-  children: string;
+  helper?: ReactNode
+  children: string
 }
 
 const LinkButton = ({ helper, className, ...props }: LinkButtonProps) => (
@@ -15,8 +15,8 @@ const LinkButton = ({ helper, className, ...props }: LinkButtonProps) => (
     <a
       onClick={(e) => {
         if (props.disabled) {
-          e.stopPropagation();
-          e.preventDefault();
+          e.stopPropagation()
+          e.preventDefault()
         }
       }}
       aria-disabled={props.disabled}
@@ -25,6 +25,6 @@ const LinkButton = ({ helper, className, ...props }: LinkButtonProps) => (
     />
     {helper && <span className="linkButton-helper">{helper}</span>}
   </div>
-);
+)
 
-export default styled(LinkButton)(linkButtonStyles);
+export default styled(LinkButton)(linkButtonStyles)
