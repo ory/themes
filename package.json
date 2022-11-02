@@ -1,33 +1,25 @@
 {
   "name": "@ory/themes",
-  "publishConfig": {
-    "access": "public"
-  },
   "version": "0.0.100",
-  "main": "lib/index.js",
-  "module": "lib/index.esm.js",
-  "types": "lib/index.d.ts",
-  "scripts": {
-    "start": "start-storybook -p 6007",
-    "build-storybook": "build-storybook",
-    "format": "prettier --write \"src/{**/,}*.{js,ts,tsx}\"",
-    "build": "rm -rf lib && rollup -c",
-    "p": "npm run build && npm version patch --git-tag-version false && npm publish"
+  "homepage": "https://github.com/ory/themes#readme",
+  "bugs": {
+    "url": "https://github.com/ory/themes/issues"
   },
   "repository": {
     "type": "git",
     "url": "ssh://git@github.com:ory/themes.git"
   },
   "license": "Apache License 2.0",
-  "bugs": {
-    "url": "https://github.com/ory/themes/issues"
+  "main": "lib/index.js",
+  "module": "lib/index.esm.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "rm -rf lib && rollup -c",
+    "build-storybook": "build-storybook",
+    "format": "prettier --write \"src/{**/,}*.{js,ts,tsx}\"",
+    "p": "npm run build && npm version patch --git-tag-version false && npm publish",
+    "start": "start-storybook -p 6007"
   },
-  "peerDependencies": {
-    "react": "~17.0.2",
-    "react-dom": "~17.0.2",
-    "styled-components": "~5.2.2"
-  },
-  "homepage": "https://github.com/ory/themes#readme",
   "dependencies": {
     "autoprefixer": "~9.8.6",
     "classnames": "~2.3.1",
@@ -53,11 +45,20 @@
     "babel-loader": "~8.1.0",
     "ory-prettier-styles": "~1.1.2",
     "prettier": "~2.3.2",
+    "prettier-plugin-packagejson": "^2.3.0",
     "react": "~17.0.2",
     "react-dom": "~17.0.2",
     "rollup": "~2.56.3",
     "rollup-plugin-peer-deps-external": "~2.2.4",
     "rollup-plugin-typescript2": "~0.30.0",
     "typescript": "~4.0.2"
+  },
+  "peerDependencies": {
+    "react": "~17.0.2",
+    "react-dom": "~17.0.2",
+    "styled-components": "~5.2.2"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
