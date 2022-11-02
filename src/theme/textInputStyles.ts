@@ -1,68 +1,66 @@
-// Copyright © 2022 Ory Corp
-
 import {
   messageStyles,
   ThemeProps,
   typographyCaptionStyles,
   typographyH3Styles,
   wrapCss,
-} from "./index";
+} from "./index"
 
 export interface TextInputProps {
-  help?: boolean;
-  state?: "success" | "error" | "disabled";
+  help?: boolean
+  state?: "success" | "error" | "disabled"
 }
 
-type ColorFunc = (props: ThemeProps & TextInputProps) => string;
+type ColorFunc = (props: ThemeProps & TextInputProps) => string
 
 const textColorForState: ColorFunc = ({ state, theme }) => {
   switch (state) {
     case "success":
-      return `color: ${theme.green60};`;
+      return `color: ${theme.green60};`
     case "error":
-      return `color: ${theme.red60};`;
+      return `color: ${theme.red60};`
   }
-  return "";
-};
+  return ""
+}
 
 const borderColorForState: ColorFunc = ({ state, theme }) => {
   switch (state) {
     case "disabled":
-      return "transparent";
+      return "transparent"
     case "success":
-      return theme.green60;
+      return theme.green60
     case "error":
-      return theme.red60;
+      return theme.red60
   }
-  return theme.grey30;
-};
+  return theme.grey30
+}
 
 const backgroundColorForState: ColorFunc = ({ state, theme }) => {
   switch (state) {
     case "disabled":
-      return theme.grey10;
+      return theme.grey10
   }
-  return "transparent";
-};
+  return "transparent"
+}
 
 export const textInputTitleStyles: ColorFunc = (props) => `
   ${typographyH3Styles(props)}
   ${textColorForState(props)}
-`;
+`
 
 export const cssTextInputTitleStyles = (props: ThemeProps) =>
-  wrapCss("text-input-title", textInputTitleStyles(props));
+  wrapCss("text-input-title", textInputTitleStyles(props))
 
 export const textInputSubtitleStyles: ColorFunc = (props) => `
   ${typographyCaptionStyles(props)}
   ${textColorForState(props)}
   margin-bottom: 15px;
-`;
+`
 export const cssTextInputSubtitleStyles = (props: ThemeProps) =>
-  wrapCss("text-input-subtitle", textInputSubtitleStyles(props));
+  wrapCss("text-input-subtitle", textInputSubtitleStyles(props))
 
 export const textInputStyles: ColorFunc = (props) => {
-  const { theme, help, state } = props;
+  const { theme, help, state } = props
 
   let css = `
   box-sizing: border-box;
@@ -86,7 +84,7 @@ export const textInputStyles: ColorFunc = (props) => {
   
   background-color: ${backgroundColorForState(props)};
   overflow: visible;
-`;
+`
 
   if (theme.platform !== "react-native") {
     css += `
@@ -101,11 +99,11 @@ export const textInputStyles: ColorFunc = (props) => {
   &:focus {
     border: 1px solid ${theme.primary60};
   }
-`;
+`
   }
 
-  return css;
-};
+  return css
+}
 
 export const cssTextInputStyles = (props: ThemeProps) =>
-  wrapCss("text-input", textInputStyles(props));
+  wrapCss("text-input", textInputStyles(props))

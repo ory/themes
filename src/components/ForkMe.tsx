@@ -1,19 +1,19 @@
-import React from "react";
-import styled from "styled-components";
+import React from "react"
+import styled from "styled-components"
 import {
   forkMeStyles,
   forkMeStylesFork,
   forkMeStylesImages,
   forkMeStylesLink,
   forkMeStylesText,
-} from "../theme";
+} from "../theme"
 
 export interface ForkMeProps extends React.HTMLAttributes<HTMLDivElement> {}
 
-const Text = styled.div(forkMeStylesText);
-const Image = styled.img(forkMeStylesImages);
-const Fork = styled.img(forkMeStylesFork);
-const Link = styled.a(forkMeStylesLink);
+const Text = styled.div(forkMeStylesText)
+const Image = styled.img(forkMeStylesImages)
+const Fork = styled.img(forkMeStylesFork)
+const Link = styled.a(forkMeStylesLink)
 
 const ForkMe = ({ className }: ForkMeProps) => (
   <div className={className}>
@@ -26,6 +26,6 @@ const ForkMe = ({ className }: ForkMeProps) => (
       </Link>
     </Text>
   </div>
-);
+)
 
-export default styled(ForkMe)(forkMeStyles);
+export default styled(ForkMe)(forkMeStyles)

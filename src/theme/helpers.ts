@@ -1,6 +1,4 @@
-// Copyright © 2022 Ory Corp
-
-import { ThemeProps as StyledThemeProps } from "styled-components";
+import { ThemeProps as StyledThemeProps } from "styled-components"
 
 export const theme = {
   grey0: "#F9F9FA",
@@ -38,16 +36,16 @@ export const theme = {
   regularFont400: "'Rubik', sans-serif",
   regularFont500: "'Rubik', sans-serif",
   codeFont400: "'Roboto Mono', sans-serif",
-};
+}
 
 export type Theme = typeof theme & {
-  platform?: "react-native" | "react";
-};
+  platform?: "react-native" | "react"
+}
 
-export type ThemeProps = StyledThemeProps<Theme>;
+export type ThemeProps = StyledThemeProps<Theme>
 
 export function wrapCss(className: string, css: string) {
   return `${"." + className} {
   ${css}
-}`;
+}`
 }

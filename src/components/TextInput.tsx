@@ -1,18 +1,18 @@
-import React, { ComponentType, InputHTMLAttributes, ReactNode } from "react";
-import styled, { StyledComponent } from "styled-components";
+import React, { ComponentType, InputHTMLAttributes, ReactNode } from "react"
+import styled, { StyledComponent } from "styled-components"
 import {
   textInputStyles,
   typographyCaptionStyles,
   typographyH3Styles,
   ThemeProps,
   TextInputProps as StyledTextInputProps,
-} from "../theme";
+} from "../theme"
 
 export interface TextInputProps
   extends React.InputHTMLAttributes<HTMLInputElement>,
     StyledTextInputProps {
-  subtitle?: ReactNode;
-  helper?: ReactNode;
+  subtitle?: ReactNode
+  helper?: ReactNode
 }
 
 const Field: StyledComponent<
@@ -20,17 +20,17 @@ const Field: StyledComponent<
     ThemeProps & InputHTMLAttributes<HTMLInputElement> & StyledTextInputProps
   >,
   any
-> = styled.input(textInputStyles);
+> = styled.input(textInputStyles)
 
 const Subtitle: StyledComponent<
   ComponentType<StyledTextInputProps & React.HTMLAttributes<HTMLDivElement>>,
   any
-> = styled.div(typographyCaptionStyles);
+> = styled.div(typographyCaptionStyles)
 
 const Title: StyledComponent<
   ComponentType<StyledTextInputProps & React.HTMLAttributes<HTMLDivElement>>,
   any
-> = styled.div(typographyH3Styles);
+> = styled.div(typographyH3Styles)
 
 const TextInput = ({
   className,
@@ -40,9 +40,9 @@ const TextInput = ({
   type = "text",
   ...props
 }: TextInputProps) => {
-  let state = props.state;
+  let state = props.state
   if (disabled) {
-    state = "disabled";
+    state = "disabled"
   }
 
   return (
@@ -59,7 +59,7 @@ const TextInput = ({
         </Subtitle>
       )}
     </div>
-  );
-};
+  )
+}
 
-export default TextInput;
+export default TextInput

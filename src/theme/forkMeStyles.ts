@@ -1,37 +1,35 @@
-// Copyright © 2022 Ory Corp
-
 import {
   ThemeProps,
   typographyH3Styles,
   typographyLinkStyles,
   wrapCss,
-} from "./index";
+} from "./index"
 
 export const forkMeStylesText = (props: ThemeProps) => `
   ${typographyH3Styles(props)}
   color: ${props.theme.grey0};
   display: flex;  
-`;
+`
 
 export const cssForkMeStylesText = (props: ThemeProps) =>
-  wrapCss("fork-me-text", forkMeStylesText(props));
+  wrapCss("fork-me-text", forkMeStylesText(props))
 
 export const forkMeStylesImages = () => `
   padding: 9px;
   height: 18px;
   width: 38px;
-`;
+`
 
 export const cssForkMeStylesImages = (props: ThemeProps) =>
-  wrapCss("fork-me-image", forkMeStylesImages());
+  wrapCss("fork-me-image", forkMeStylesImages())
 
 export const forkMeStylesFork = () => `
   height: 14px;
   width: 14px;
-`;
+`
 
 export const cssForkMeStylesFork = (props: ThemeProps) =>
-  wrapCss("fork-me-fork", forkMeStylesFork());
+  wrapCss("fork-me-fork", forkMeStylesFork())
 
 export const forkMeStylesLink = (props: ThemeProps) => {
   let css = `
@@ -48,7 +46,7 @@ export const forkMeStylesLink = (props: ThemeProps) => {
   align-items: center;
   justify-content: flex-start;
   flex-direction: row;
-`;
+`
 
   if (props.theme.platform !== "react-native") {
     css += `
@@ -65,14 +63,14 @@ export const forkMeStylesLink = (props: ThemeProps) => {
   &:active {
     color: ${props.theme.grey30};
   }
-`;
+`
   }
 
-  return css;
-};
+  return css
+}
 
 export const cssForkMeStylesLink = (props: ThemeProps) =>
-  wrapCss("fork-me-link", forkMeStylesLink(props));
+  wrapCss("fork-me-link", forkMeStylesLink(props))
 
 export const forkMeStyles = ({ theme }: ThemeProps) => {
   let css = `
@@ -83,13 +81,13 @@ export const forkMeStyles = ({ theme }: ThemeProps) => {
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
-`;
+`
   if (theme.platform === "react") {
     css += `box-sizing: border-box;
-`;
+`
   }
-  return css;
-};
+  return css
+}
 
 export const cssForkMeStyles = (props: ThemeProps) =>
-  wrapCss("fork-me", forkMeStyles(props));
+  wrapCss("fork-me", forkMeStyles(props))

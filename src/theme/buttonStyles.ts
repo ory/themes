@@ -1,10 +1,8 @@
-// Copyright © 2022 Ory Corp
-
-import { ThemeProps, typographyButtonStyles, wrapCss } from "./index";
+import { ThemeProps, typographyButtonStyles, wrapCss } from "./index"
 
 export interface ButtonStyles extends ThemeProps {
-  big?: boolean;
-  disabled?: boolean;
+  big?: boolean
+  disabled?: boolean
 }
 
 export const buttonStyles = ({ big, theme }: ButtonStyles) => `
@@ -50,10 +48,10 @@ ${typographyButtonStyles({ theme })}
   outline: none;
   border: 2px solid transparent;
 }
-`;
+`
 
 export const cssButtonStyles = (props: ThemeProps) =>
-  wrapCss("input-button", buttonStyles(props));
+  wrapCss("input-button", buttonStyles(props))
 
 export const cssButtonStylesBig = (props: ThemeProps) =>
-  wrapCss("input-button-big", buttonStyles({ ...props, big: true }));
+  wrapCss("input-button-big", buttonStyles({ ...props, big: true }))

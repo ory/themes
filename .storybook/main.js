@@ -1,5 +1,3 @@
-// Copyright © 2022 Ory Corp
-
 module.exports = {
   stories: [
     "../src/stories/**/*.stories.@(js|jsx|ts|tsx|mdx)",
@@ -7,4 +5,4 @@ module.exports = {
   ],
   addons: ["@storybook/addon-links", "@storybook/addon-essentials"],
   postCss: false,
-};
+}
