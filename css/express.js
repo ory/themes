@@ -1,3 +1,5 @@
+// Copyright © 2022 Ory Corp
+
 const postcss = require("postcss")
 const postcssPresetEnv = require("postcss-preset-env")
 

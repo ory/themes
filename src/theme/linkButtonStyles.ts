@@ -1,3 +1,5 @@
+// Copyright © 2022 Ory Corp
+
 import { ThemeProps, typographyButtonStyles, wrapCss } from "./index"
 
 export interface LinkButtonStyles extends ThemeProps {

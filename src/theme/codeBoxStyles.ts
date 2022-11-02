@@ -1,3 +1,5 @@
+// Copyright © 2022 Ory Corp
+
 import { ThemeProps, wrapCss } from "./index"
 
 export const codeBoxStyles = ({ theme }: ThemeProps) => `

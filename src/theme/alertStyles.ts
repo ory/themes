@@ -1,3 +1,5 @@
+// Copyright © 2022 Ory Corp
+
 import { ThemeProps } from "./helpers"
 
 export interface AlertStyles extends ThemeProps {

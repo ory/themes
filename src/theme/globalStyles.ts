@@ -1,3 +1,5 @@
+// Copyright © 2022 Ory Corp
+
 import { createGlobalStyle } from "styled-components"
 import normalize from "./normalizeStyles"
 import { ThemeProps } from "./helpers"

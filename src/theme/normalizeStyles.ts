@@ -1,3 +1,5 @@
+// Copyright © 2022 Ory Corp
+
 import { css } from "styled-components"
 
 export const cssNormalize = `

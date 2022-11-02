@@ -1,3 +1,5 @@
+// Copyright © 2022 Ory Corp
+
 export * from "./buttonStyles"
 export * from "./linkButtonStyles"
 export * from "./typographyStyles"

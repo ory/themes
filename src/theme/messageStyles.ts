@@ -1,3 +1,5 @@
+// Copyright © 2022 Ory Corp
+
 import { codeBoxStyles, ThemeProps, typographyH3Styles, wrapCss } from "./index"
 
 export const messageStyles = (props: ThemeProps) => `

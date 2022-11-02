@@ -12,7 +12,8 @@ jobs:
         with:
           node-version: "14"
       - run: npm ci
-      - run: npm version --no-git-tag-version ${{ github.event.release.tag_name }}
+      - run:
+          npm version --no-git-tag-version ${{ github.event.release.tag_name }}
       - run: npm run build
       - run:
           echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN_AENEASR
