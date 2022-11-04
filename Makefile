@@ -1,5 +1,5 @@
 format: .bin/ory node_modules  # formats the source code
-	.bin/ory dev headers copyright --exclude=rollup.config.js --exclude=css/express.d.ts
+	.bin/ory dev headers copyright --type=open-source --exclude=rollup.config.js --exclude=css/express.d.ts
 	npm exec -- prettier --write .
 
 help:  # prints all make targets
