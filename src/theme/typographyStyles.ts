@@ -122,7 +122,7 @@ color: ${theme.primary60};
 
   if (theme.platform !== "react-native") {
     css += `
-&.fake-visited, 
+&.fake-visited,
 &:visited {
   color: ${theme.primary70};
 }
@@ -131,7 +131,7 @@ color: ${theme.primary60};
 &:hover {
   color: ${theme.primary30};
 }
-&.fake-active, 
+&.fake-active,
 &:active {
   color: ${theme.primary70};
 }

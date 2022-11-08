@@ -57,7 +57,7 @@ module.exports = {
 :root {
 ${cssVars(theme || t)}
 }
-  
+
 ${cssNormalize}
 
 ${cssButtonStyles(ct)}
