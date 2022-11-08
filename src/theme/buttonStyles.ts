@@ -1,3 +1,6 @@
+// Copyright © 2022 Ory Corp
+// SPDX-License-Identifier: Apache-2.0
+
 import { ThemeProps, typographyButtonStyles, wrapCss } from "./index"
 
 export interface ButtonStyles extends ThemeProps {
@@ -12,16 +15,16 @@ ${typographyButtonStyles({ theme })}
   line-height: ${!big ? "20px" : "30px"};
   color: ${theme.grey0};
   border-radius: ${theme.borderRadius};
-  
+
   width: 100%;
-  
+
   padding: 5px 12px;
   margin: 7px 0;
   border: 2px solid transparent;
   outline: none;
-  
+
   background-color: ${theme.primary60};
- 
+
   cursor: pointer;
 }
 

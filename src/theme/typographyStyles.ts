@@ -1,3 +1,6 @@
+// Copyright © 2022 Ory Corp
+// SPDX-License-Identifier: Apache-2.0
+
 import { ThemeProps, wrapCss } from "./index"
 
 const geometricPrecision = ({ theme }: ThemeProps) =>
@@ -119,7 +122,7 @@ color: ${theme.primary60};
 
   if (theme.platform !== "react-native") {
     css += `
-&.fake-visited, 
+&.fake-visited,
 &:visited {
   color: ${theme.primary70};
 }
@@ -128,7 +131,7 @@ color: ${theme.primary60};
 &:hover {
   color: ${theme.primary30};
 }
-&.fake-active, 
+&.fake-active,
 &:active {
   color: ${theme.primary70};
 }

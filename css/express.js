@@ -1,3 +1,6 @@
+// Copyright © 2022 Ory Corp
+// SPDX-License-Identifier: Apache-2.0
+
 const postcss = require("postcss")
 const postcssPresetEnv = require("postcss-preset-env")
 
@@ -54,7 +57,7 @@ module.exports = {
 :root {
 ${cssVars(theme || t)}
 }
-  
+
 ${cssNormalize}
 
 ${cssButtonStyles(ct)}
