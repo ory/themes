@@ -1,15 +1,16 @@
-import React from "react"
-import { Meta } from "@storybook/react"
-import { Story } from "@storybook/react/types-6-0"
-import { Container, Spacer } from "./storyhelper"
 import Checkbox, { CheckboxProps } from "../components/Checkbox"
+import { Container, Spacer } from "./storyhelper"
+
+import { Meta } from "@storybook/react"
+import React from "react"
+import { StoryFn } from "@storybook/react/types-6-0"
 
 const meta: Meta = {
   title: "Checkbox",
   component: Checkbox,
 }
 
-const Template: Story<CheckboxProps> = (args: CheckboxProps) => (
+const Template: StoryFn<CheckboxProps> = (args: CheckboxProps) => (
   <Container>
     <Checkbox {...args} />
   </Container>

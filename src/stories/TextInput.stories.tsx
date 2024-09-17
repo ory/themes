@@ -1,16 +1,16 @@
-import React from "react"
-import { Meta } from "@storybook/react"
-import { Story } from "@storybook/react/types-6-0"
+import TextInput, { TextInputProps } from "../components/TextInput"
 
 import { Container } from "./storyhelper"
-import TextInput, { TextInputProps } from "../components/TextInput"
+import { Meta } from "@storybook/react"
+import React from "react"
+import { StoryFn } from "@storybook/react/types-6-0"
 
 const meta: Meta = {
   title: "TextInput",
   component: TextInput,
 }
 
-const Template: Story<TextInputProps> = (args) => (
+const Template: StoryFn<TextInputProps> = (args) => (
   <Container>
     <TextInput {...args} />
   </Container>

@@ -1,17 +1,17 @@
-import React from "react"
-import { Meta } from "@storybook/react"
-import { Story } from "@storybook/react/types-6-0"
-
-import LinkButton, { LinkButtonProps } from "../components/LinkButton"
-import { Container, Spacer } from "./storyhelper"
 import { Caption, Link as StyledLink } from "../components/Typography"
+import { Container, Spacer } from "./storyhelper"
+import LinkButton, { LinkButtonProps } from "../components/LinkButton"
+
+import { Meta } from "@storybook/react"
+import React from "react"
+import { StoryFn } from "@storybook/react/types-6-0"
 
 const meta: Meta = {
   title: "LinkButton",
   component: LinkButton,
 }
 
-const Template: Story<LinkButtonProps> = (args: LinkButtonProps) => (
+const Template: StoryFn<LinkButtonProps> = (args: LinkButtonProps) => (
   <Container>
     <LinkButton {...args} />
   </Container>

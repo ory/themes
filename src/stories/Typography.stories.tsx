@@ -1,25 +1,25 @@
-import React from "react"
-import { Meta } from "@storybook/react"
-import { Story } from "@storybook/react/types-6-0"
-
-import { Container, HR } from "./storyhelper"
 import {
+  B,
+  Caption,
+  Code,
   H1,
   H2,
   H3,
-  Code,
-  Caption,
-  Link as StyledLink,
-  P,
-  B,
   Lead,
+  P,
+  Link as StyledLink,
 } from "../components/Typography"
+import { Container, HR } from "./storyhelper"
+
+import { Meta } from "@storybook/react"
+import React from "react"
+import { StoryFn } from "@storybook/react/types-6-0"
 
 const meta: Meta = {
   title: "Typography",
 }
 
-const Template: Story<{}> = () => (
+const Template: StoryFn<{}> = () => (
   <Container>
     <H1>Heading 1</H1>
     <HR />
@@ -53,7 +53,7 @@ Typography.args = {
   children: "Text",
 }
 
-export const Links: Story = () => (
+export const Links: StoryFn = () => (
   <Container>
     <StyledLink
       href="https://www.ory.sh/"
