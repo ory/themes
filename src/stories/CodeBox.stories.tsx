@@ -1,15 +1,16 @@
-import React from "react"
-import { Meta } from "@storybook/react"
-import { Story } from "@storybook/react/types-6-0"
-import { Container, Spacer } from "./storyhelper"
 import CodeBox, { CodeBoxProps } from "../components/CodeBox"
+import { Container, Spacer } from "./storyhelper"
+
+import { Meta } from "@storybook/react"
+import React from "react"
+import { StoryFn } from "@storybook/react/types-6-0"
 
 const meta: Meta = {
   title: "CodeBox",
   component: CodeBox,
 }
 
-const Template: Story<CodeBoxProps> = (args: CodeBoxProps) => (
+const Template: StoryFn<CodeBoxProps> = (args: CodeBoxProps) => (
   <Container>
     <CodeBox {...args} />
   </Container>

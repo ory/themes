@@ -29,23 +29,24 @@
   },
   "homepage": "https://github.com/ory/themes#readme",
   "dependencies": {
-    "autoprefixer": "~9.8.6",
+    "@storybook/csf": "^0.1.11",
+    "@storybook/types": "^8.3.1",
+    "autoprefixer": "^10.4.20",
     "classnames": "~2.3.1",
     "normalize.css": "~8.0.1",
-    "postcss": "~8.3.6",
-    "postcss-preset-env": "~6.7.0",
+    "postcss": "~8.4.47",
+    "postcss-preset-env": "^10.0.3",
     "precss": "~4.0.0",
-    "styled-components": "~5.2.2",
-    "update": "^0.7.4"
+    "styled-components": "~5.2.2"
   },
   "devDependencies": {
     "@babel/core": "~7.11.4",
     "@rollup/plugin-commonjs": "~20.0.0",
     "@rollup/plugin-node-resolve": "~13.0.4",
     "@storybook/addon-actions": "~6.3.7",
-    "@storybook/addon-essentials": "~6.3.7",
+    "@storybook/addon-essentials": "^8.3.1",
     "@storybook/addon-links": "~6.3.7",
-    "@storybook/react": "~6.3.7",
+    "@storybook/react": "^8.3.1",
     "@types/autoprefixer": "~10.2.0",
     "@types/express": "~4.17.13",
     "@types/react": "~17.0.14",
@@ -60,6 +61,6 @@
     "rollup": "~2.56.3",
     "rollup-plugin-peer-deps-external": "~2.2.4",
     "rollup-plugin-typescript2": "0.35.0",
-    "typescript": "~4.0.2"
+    "typescript": "~4.2"
   }
 }
